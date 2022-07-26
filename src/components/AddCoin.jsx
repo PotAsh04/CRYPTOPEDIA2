@@ -31,9 +31,9 @@ function AddCoin()
       Add Coin
       </button>
       <div className={isActive ? "dropdown-menu show" : "dropdown-menu"}>
-        {availableCoins.map((index,el) => {
+        {availableCoins.map((el) => {
           return (
-            <a key={index}
+            <a key={el}
               onClick={() => handleClick(el)}
               href="/#"
               className="dropdown-item"

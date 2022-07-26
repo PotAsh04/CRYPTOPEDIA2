@@ -20,7 +20,6 @@ export function WatchListContextProvider(props)
             "cardano",
             "stellar",
             "dai",
-            "leo"
         ]
     }
     // localStorage.getItem('watchList').split(",") ||
