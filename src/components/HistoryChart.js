@@ -45,6 +45,7 @@ function HistoryChart({data})
             ...chartOptions,
           },
       });
+      console.log(chartInstance);
     }
   });
   
