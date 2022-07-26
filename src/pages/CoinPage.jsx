@@ -64,7 +64,7 @@ function CoinPage()
         setIsLoading(false);
     }
     fetchdata();
-},[])
+},[])// eslint-disable-line
   if(isLoading)
   return <div></div>
   return (

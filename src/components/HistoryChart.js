@@ -26,6 +26,7 @@ function HistoryChart({data})
     if (chartRef && chartRef.current && detail) // if chartref exists and details have been parsed
     {
       // console.log("debug3");
+      // eslint-disable-line
       const chartInstance = new Chartjs(chartRef.current, 
         {
           type: "line",
@@ -54,7 +55,7 @@ function HistoryChart({data})
       return(
         <div >
         <li className='coin d-flex '>
-            <img className='coinlist-image ' src={detail.image}></img>
+            <img className='coinlist-image ' src={detail.image} alt="not found"></img>
             <h2 className='mx-2 my-1' >{detail.name}</h2>
           </li>
           <hr></hr>

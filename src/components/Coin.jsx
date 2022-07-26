@@ -6,7 +6,7 @@ function Coin({coin , deleteCoin}){
     <Link to={`/coins/${coin.id}`}>
       <li className='coin coinlist-item list-group-item list-group-item-action d-flex justify-content-between align-items-center text-dark'>
             <span className='text-decoration-none'>
-             <img className='coinlist-image mx-1' src={coin.image}></img>
+             <img className='coinlist-image mx-1' src={coin.image} alt={"not found"}></img>
              {/* {coin.name} */}
             </span>
             

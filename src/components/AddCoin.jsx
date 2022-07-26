@@ -4,7 +4,7 @@ import { WatchListContext } from "../context/watchListContext";
 function AddCoin()
 {
   const [isActive, setIsActive] = useState(false);
-  const {addCoin,watchList}=useContext(WatchListContext);
+  const {addCoin}=useContext(WatchListContext);
   const availableCoins = [
     "solana",
     "polkadot",
@@ -15,9 +15,6 @@ function AddCoin()
     "ripple",
     "tether",
   ];
-  // console.log("debug4");
-  // const updatedWatchList=availableCoins;
-  // const updatedWatchList = availableCoins.filter(coin => !watchList.includes(coin))
   function handleClick(coiname)
   {
     addCoin(coiname);
@@ -34,12 +31,11 @@ function AddCoin()
       Add Coin
       </button>
       <div className={isActive ? "dropdown-menu show" : "dropdown-menu"}>
-        {/* {updatedWatchList.map((el) => { */}
-        {availableCoins.map((el) => {
+        {availableCoins.map((index,el) => {
           return (
-            <a
+            <a key={index}
               onClick={() => handleClick(el)}
-              href="#"
+              href="/#"
               className="dropdown-item"
             >
               {el}
