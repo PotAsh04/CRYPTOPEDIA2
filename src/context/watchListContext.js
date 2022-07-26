@@ -4,9 +4,14 @@ export const WatchListContext = createContext();
 
 export function WatchListContextProvider(props) 
 {
-    const [watchList,setWatchList]=useState(
-        localStorage.getItem('watchList').split(",") ||
-        [
+    function getLocalStorage() {
+        try {
+            var localStorageItems = localStorage.getItem('watchList').split(",")
+            return localStorageItems
+        } catch (error) {
+            console.log(error)
+        }
+        return [
             "bitcoin-cash",
             "litecoin",
             "eos",
@@ -15,9 +20,11 @@ export function WatchListContextProvider(props)
             "cardano",
             "stellar",
             "dai",
-            "leo"            
-        ]);
-
+            "leo"
+        ]
+    }
+    // localStorage.getItem('watchList').split(",") ||
+    const [watchList,setWatchList]=useState(getLocalStorage());
     useEffect(() => {
         localStorage.setItem('watchList',watchList);
     },[watchList])
