@@ -7,7 +7,7 @@ function CoinData({details})
     if (details) 
     {
       return (
-        <div className="bg-white  mb-3 mt-2 p-2 rounded  row coindetailcontainer">
+        <div className="bg-white  mb-3 mt-2 p-2 rounded  row coindetailcontainer coindetailcontaine2">
           <div className="col-sm">
             <div className="d-flex flex-column">
               <span className="text-muted coin-data-category font-weight-bold">Market Cap</span>

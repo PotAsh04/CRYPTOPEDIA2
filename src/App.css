@@ -6,24 +6,37 @@
 }
 
 
+body {
+  background-color: rgb(0, 0, 0);
+  color : black;
+}
 .title{
   text-align: center;
-  color: cyan;
+  /* color: cyan; */
+  color: gold;
   margin-bottom: 35px;
   margin-top: 25px;
 }
 .homepage{
-  border: 3px solid cyan;
-  width: 92%;
+  border: 3px solid black;
+  width: 78%;
   margin: auto;
 }
 .coindetailcontainer{
-  border: 3px solid cyan;
-  /* border-radius: 200px; */
+  box-shadow: 2px 2px 8px #d4af34;
+  margin: 5px;
+  color: white;
+  background-color: black !important;
+  margin-top: 15px !important;
 }
-body {
-  background-color: rgb(0, 0, 0);
-  color : black;
+.coindetailcontainer2{
+  text-align: center;
+}
+.backbtn
+{
+  text-align: end;
+  margin-bottom: 15px;
+  /* color: black !important; */
 }
 
 ul {
@@ -31,16 +44,22 @@ ul {
 }
 
 .coinlist-image {
-  width: 50px;
+  width: 52px;
 }
 
 .coinlist-item {
+  /* box-shadow: 2px 2px #D4AF37; */
+  box-shadow: 5px 6px 9px #d4af34;
   display: flex;
+  margin: 5px;
 }
 
+
+
 .coinsummary {
-  border-color: white !important;
-  border-style: outset !important;
+  /* border-color: white !important; */
+  /* border-style: outset !important; */
+  background-color: black;  
 }
 
 .coin-data-category {
@@ -56,3 +75,84 @@ ul {
 .coin:hover .delete-icon {
   display: block;
 } 
+.btn1
+{
+  font-weight: 600;
+  background-color: gold;
+  color: black;
+  border: none;
+}
+.btn2
+{
+  font-weight: 600;
+  background-color: gold;
+  color: black;
+  border: none;
+}
+.btn2:hover
+{
+  font-weight: 600;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+}
+.coinname{
+  margin: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.coinfield
+{
+  width: 25%;
+}
+.coinfield:nth-child(1)
+{
+  width: 50%;
+}
+
+
+/* .coinfield1{
+  display: inline-block;
+  width: 5%;
+}
+.coinfield4{
+  text-align: center;
+} */
+  @media screen and (max-width: 1200px) {
+    .homepage{
+      width: 100%;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      font-size: 15px;
+    } 
+    .rootcontainer{
+      padding: 0px;
+      width: 100%;
+    }
+    .coin-data-category{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .title{
+      font-size: 38px;
+    }
+    .homepage{
+      width: 100%;
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      font-size: 15px;
+    }
+    .coin-data-category{
+      font-size: 15px;
+    }
+    .coinlist-image{
+      width: 40px;
+    } 
+    .coindetailimg{
+      width: 45px;
+    }   
+    /* .coindetailname{
+      font-size: 25px;
+    } */
+  }

@@ -14,7 +14,7 @@ function CoinList()
             setIsLoading(true);
             const response = await coinGecko.get("/coins/markets/",{
                 params: {
-                    vs_currency: "usd",
+                    vs_currency: "inr",
                     ids: watchList.join(",")
                 }
             })
@@ -33,6 +33,7 @@ function CoinList()
         {
             return <div>Loading........</div>
         }
+        coins.sort((a, b) => (a.id > b.id) ? 1 : -1); // sorting on the basis of names
         return (
             <ul className='coinList list-group mt-2'>
                 {coins.map(coin=>{

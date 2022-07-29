@@ -35,9 +35,10 @@ function HistoryChart({data})
               {
                 label: `${detail.name} price`,
                 data: determineTimeFormat(),
-                backgroundColor: "cyan",
-                borderColor: "rgba(0, 0, 0, 0.4",
-                pointRadius: 1,
+                backgroundColor: "gold",
+                borderWidth : 2,
+                borderColor: "white",
+                pointRadius: .2,
               },
             ],
           },
@@ -56,8 +57,8 @@ function HistoryChart({data})
       return(
         <div >
         <li className='coin d-flex '>
-            <img className='coinlist-image ' src={detail.image} alt="not found"></img>
-            <h2 className='mx-2 my-1' >{detail.name}</h2>
+            <img className='coinlist-image coindetailimg ' src={detail.image} alt="not found"></img>
+            <h2 className='mx-2 my-1 coindetailname' >{detail.name}</h2>
           </li>
           <hr></hr>
           

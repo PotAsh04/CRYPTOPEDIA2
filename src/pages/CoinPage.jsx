@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import CoinData from '../components/CoinData';
 import HistoryChart from '../components/HistoryChart';
 import coinGecko from '../apis/coinGecko';
+import Back from '../components/Back';
 
 function CoinPage()
 {
@@ -47,7 +48,7 @@ function CoinPage()
                                         }),
                                         coinGecko.get("/coins/markets/",{
                                           params: {
-                                              vs_currency: "usd",
+                                              vs_currency: "inr",
                                               ids: coinid
                                           }
                                         })
@@ -69,6 +70,7 @@ function CoinPage()
   return <div></div>
   return (
     <div >
+        <Back></Back>
         <HistoryChart data={coinData}></HistoryChart>
         <CoinData details={coinData.detail}></CoinData>
     </div>
