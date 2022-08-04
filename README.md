@@ -9,19 +9,22 @@ The app uses ChartJS for chart related contents and  Context API for state manag
 ### Deployment
 The application has been deployed using netlify .
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm test`
-Launches the test runner in the interactive watch mode.\
-
-### `npm run build`
+#### `npm run build`
 Builds the app for production to the `build` folder.\
+
+### Some previews 
+
+![image](https://user-images.githubusercontent.com/82645120/182807748-be08e9f7-c98b-4aaa-93a1-707f718af563.png)
+![image](https://user-images.githubusercontent.com/82645120/182807836-6f7d3262-49c5-474c-9d0e-caa9b0d4c4dc.png)
+
 
 
 
